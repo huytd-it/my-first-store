@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../../../assets/LOGO 1.svg";
+import logo from "../../assets/LOGO 1.svg";
 import { UserCircleIcon } from "@heroicons/react/24/solid";
 
 function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   var activeClass = `px-6 py-2 bg-orange-400`;
-  var navLinkStyle = `transition-colors font-medium px-6 py-2 rounded-full flex `;
+  var navLinkStyle = `transition-colors px-6 py-2 rounded-full flex `;
   return (
     <header className=" text-white p-4 sticky top-0 z-50">
       {" "}
@@ -105,37 +105,7 @@ function Header() {
             <div className="absolute top-full right-0 bg-gray-800 w-48 rounded-md shadow-lg z-10">
               {" "}
               {/* z-10 để menu mobile nằm trên các phần tử khác */}
-              <nav>
-                <ul className="flex flex-col p-4 space-y-2">
-                  <li>
-                    <NavLink
-                      to="/"
-                      className="hover:text-gray-300"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Trang chủ
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/dashboard"
-                      className="hover:text-gray-300"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Giới thiệu
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/contact"
-                      className="hover:text-gray-300"
-                      onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                      Liên hệ
-                    </NavLink>
-                  </li>
-                </ul>
-              </nav>
+      
             </div>
           )}
         </div>
