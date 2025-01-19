@@ -1,21 +1,32 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/layout/Header/Header';
-import Home from './pages/Home/Home';
-import Dashboard from './pages/Dashboard/Dashboard';
-
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Login from "./pages/Login";
+import MainLayout from "./components/layout/MainLayout";
+import AuthLayout from "./components/layout/AuthLayout";
+import NotFound from "./pages/NotFound";
+import Dashboard from "./pages/Dashboard";
+import Order from "./pages/Order";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Header /> {/* Sử dụng component Header */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-         
-        </Routes>
-      </div>
+      <Routes>
+        {/* Main Layout */}
+        <Route path="/" element={<MainLayout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<Order />} />
+          <Route path="dashboard" element={<Dashboard />} />
+        </Route>
+
+        {/* Auth Layout */}
+        <Route path="/login" element={<AuthLayout />}>
+          <Route index element={<Login />} />
+        </Route>
+
+        {/* 404 Page */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </Router>
   );
 }
