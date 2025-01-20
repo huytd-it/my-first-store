@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import bgLogin from "../../assets/login-illustrator.png";
+import iconGoogle from "../../assets/google.svg";
+import iconFacebook from "../../assets/facebook.svg";
 import logoIcon from "../../assets/LOGO 1.svg";
 import InputGroup from "../common/InputGroup";
-import { EnvelopeIcon, LockClosedIcon, LockOpenIcon, UserIcon } from "@heroicons/react/24/solid";
+import { EnvelopeIcon, LockClosedIcon } from "@heroicons/react/24/solid";
 const LoginForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,9 +29,9 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="flex items-center flex-wrap  justify-center w-full  2xl:w-10/12 m-auto">
-      <div className="bg-white p-8 py-24 shadow-2xl w-full xl:w-1/3 ">
-        <img className="my-6 m-auto" src={logoIcon} alt="" />
+    <div className="flex items-center flex-wrap bg-white rounded-xl shadow-xl  justify-center w-full  2xl:w-10/12 m-auto ">
+      <div className=" p-8 py-12 border-r border-gray-300 w-full xl:w-2/5 ">
+        <img className="my-3 m-auto" src={logoIcon} alt="" />
         <h2 className="text-xl font-bold my-10 text-center text-gray-800">
           Login into your account
         </h2>
@@ -65,13 +67,14 @@ const LoginForm = () => {
 
           <div className="flex mt-12 items-center justify-between">
             <button
-              className="bg-orange-500 hover:bg-orange-700 shadow-orange-300 shadow-lg text-white  py-2 px-4 rounded-md focus:outline-none focus:shadow-outline w-full"
+              className="bg-orange-500 hover:bg-orange-700 focus:shadow-md shadow-orange-300 shadow-lg text-white 
+               py-2 px-4 rounded-md focus:outline-none focus:shadow-outline w-full"
               type="submit"
             >
               Login Now
             </button>
           </div>
-          <p className="w-full mt-6 mx- text-center"> OR </p>
+          <p className="w-full mt-6 mb-6 text-center"> OR </p>
 
           <div className="flex items-center justify-between">
             <button
@@ -81,10 +84,28 @@ const LoginForm = () => {
               Signup Now
             </button>
           </div>
+          <div className="flex items-center justify-between mt-6">
+            <button
+              className="justify-center border-gray-300 border flex text-gray-500 items-center
+                py-2 px-4 rounded-md focus:outline-none focus:shadow-outline w-full hover:border hover:border-orange-500 hover:text-orange-500"
+              type="submit"
+            >
+              <img src={iconGoogle} alt="" className="w-6 mr-3" />Login with Google
+            </button>
+          </div>
+          <div className="flex items-center justify-between mt-6">
+            <button
+              className="justify-center border-gray-300 border flex text-gray-500 items-center
+                py-2 px-4 rounded-md focus:outline-none focus:shadow-outline w-full hover:border hover:border-orange-500 hover:text-orange-500"
+              type="submit"
+            >
+              <img src={iconFacebook} alt="" className="w-6 mr-3" />Login with Facebook
+            </button>
+          </div>
         </form>
       </div>
-      <div className="w-2/3">
-        <img src={bgLogin} alt="" />
+      <div className="w-3/5">
+        <img src={bgLogin} className="w-full object-cover" alt="" />
       </div>
     </div>
   );
