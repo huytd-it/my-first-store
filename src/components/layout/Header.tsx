@@ -9,14 +9,14 @@ function Header() {
   var activeClass = `px-6 py-2 bg-orange-400`;
   var navLinkStyle = `transition-colors px-6 py-2 rounded-full flex `;
   return (
-    <header className=" text-white p-4 sticky top-0 z-50">
+    <header className=" text-white p-4 sticky top-0 z-50 bg-white bg-opacity-90">
       {" "}
       {/* sticky top-0 để header luôn dính trên đầu trang */}
       <div className="container mx-auto flex justify-between items-center">
         <NavLink to="/" className="text-xl font-bold">
           {" "}
           {/* Sử dụng NavLink */}
-          <img src={logo} alt="logo" />
+          <img src={logo} alt="logo" className="w-32" />
         </NavLink>
         <div className="hidden md:block">
           <nav>
