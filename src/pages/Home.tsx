@@ -37,7 +37,7 @@ const Home: React.FC = () => {
     },
   ];
   return (
-    <div>
+    <div className="container mx-auto">
       <div className="bg-gray-100 relative w-full pt-5 px-12  h-[35rem] rounded-md">
         <div className="bg-orange-500 w-2/5 absolute right-0 bottom-0 rounded-s-full h-[33rem]"></div>
 

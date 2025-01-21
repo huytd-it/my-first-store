@@ -7,7 +7,7 @@ const MainLayout: React.FC = () => {
   return (
     <>
       <Header />
-      <main className="container mx-auto mt-4 min-h-screen ">
+      <main className="mx-auto mt-4 min-h-screen ">
         <Outlet />
       </main>
       <Footer/>
