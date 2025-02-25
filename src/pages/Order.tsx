@@ -106,7 +106,7 @@ const Order: React.FC = () => {
 
           <div className="flex flex-wrap space-y-3 gap-3">
             {/** Items */}
-            <div className="flex border mx-3 w-full shadow-lg">
+            <div className="flex border mx-3 w-full shadow-lg rounded-xl">
               <div className="flex pt-12 px-6 flex-wrap">
                 <div className="w-2/5">
                   <p className="font-bold text-2xl">Farm House Xtreme Pizza</p>
