@@ -10,6 +10,8 @@ const LoginForm = () => {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [searchQuery, setSearchQuery] = useState("");
+
+  console.log(searchQuery);
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 

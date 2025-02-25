@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Home: React.FC = () => {
-  const [activeIndex, setActiveIndex] = useState(null); // Quản lý mục đang active
+  const [activeIndex, setActiveIndex] = useState(0); // Quản lý mục đang active
   const items = ["Vegan", "Sushi", "Pizza & Fast food", "Others"]; // Danh sách mục
 
   const restaurants = [
