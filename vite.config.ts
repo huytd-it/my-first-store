@@ -4,5 +4,8 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/my-first-store/"
+  base: "/my-first-store",
+  server: {
+    host: true
+  }
 })

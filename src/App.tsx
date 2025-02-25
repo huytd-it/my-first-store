@@ -10,11 +10,13 @@ import Order from "./pages/Order";
 import Restaurant from "./pages/Restaurant";
 
 function App() {
+
+  console.log(new Date().toLocaleTimeString());
   return (
     <Router>
       <Routes>
         {/* Main Layout */}
-        <Route path="/" element={<MainLayout />}>
+        <Route path="/my-first-store" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="special-offers" element={<Order />} />
           <Route path="dashboard" element={<Dashboard />} />
