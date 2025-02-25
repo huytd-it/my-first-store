@@ -100,8 +100,8 @@ const Order: React.FC = () => {
           />
         </div>
         <div className="w-3/5">
-          <p className="flex p-12 items-center">
-            <span className="pl-6 font-bold text-3xl">Menu</span>
+          <p className="flex p-6 items-center">
+            <span className=" font-bold text-3xl">Menu</span>
           </p>
 
           <div className="flex flex-wrap space-y-3 gap-3">

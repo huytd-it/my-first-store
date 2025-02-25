@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
   };
   return (
     <>
-      <div className="bg-zinc-100 flex space-x-12 p-12 pt-24 bottom-0 relative">
+      <div className="bg-zinc-100 flex flex-wrap space-x-12 p-6 sm:p-12 sm:pt-24 bottom-0 relative">
         <div className="flex-1">
           <img src="/logo-2.svg" alt="" />
           <img src="/app-store-badges-en 1.png" alt="" className="w-96 my-12" />
@@ -41,24 +41,24 @@ const Footer: React.FC = () => {
             <img src="/TikTok.svg" alt="" className="flex-1" />
           </div>
         </div>
-        <div className="flex p-3 py-6 space-x-12 flex-1">
+        <div className="flex p-3 py-6 space-x-12 flex-1 ">
           <div>
             <span className=" font-bold">Legal Pages</span>
             <ul className="list-none">
               <li className="py-3 underline">
-                {" "}
+              
                 <a href="#">Terms and conditions</a>
               </li>
               <li className="py-3 underline">
-                {" "}
+              
                 <a href="#">Privacy</a>
               </li>
               <li className="py-3 underline">
-                {" "}
+               
                 <a href="#">Cookies</a>
               </li>
               <li className="py-3 underline">
-                {" "}
+                
                 <a href="#">Modern Slavery Statement</a>
               </li>
             </ul>
