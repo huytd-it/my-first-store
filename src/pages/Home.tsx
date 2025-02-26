@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import backgroundPizza from "/Untitled-2 1.png";
+import backgroundNoodle from "/Untitled-1 1.png";
+import logo from "/logo.svg";
 
 const Home: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0); // Quản lý mục đang active
@@ -7,33 +10,88 @@ const Home: React.FC = () => {
   const restaurants = [
     {
       id: 1,
-      avatar: "/mcdonal.png",
+      avatar: "mcdonal.png",
       name: "McDonald’s London ",
     },
     {
       id: 2,
-      avatar: "/Rectangle 13 (1).png",
+      avatar: "Rectangle 13 (1).png",
       name: "Papa Johns",
     },
     {
       id: 3,
-      avatar: "/Rectangle 13 (2).png",
+      avatar: "Rectangle 13 (2).png",
       name: "KFC West London",
     },
     {
       id: 4,
-      avatar: "/Rectangle 13 (3).png",
+      avatar: "Rectangle 13 (3).png",
       name: "Texas Chicken",
     },
     {
       id: 5,
-      avatar: "/Rectangle 13 (4).png",
+      avatar: "Rectangle 13 (4).png",
       name: "Burger King",
     },
     {
       id: 6,
-      avatar: "/Rectangle 13 (5).png",
+      avatar: "Rectangle 13 (5).png",
       name: "Shaurma 1",
+    },
+  ];
+  const foodMenus = [
+    {
+      type: "Vegan",
+      avatar: "Rectangle 8 (1).png",
+      name: "Chef Burgers London",
+    },
+    {
+      type: "Vegan",
+      avatar: "Rectangle 8 (1).png",
+      name: "Chef Burgers London",
+    },
+    {
+      type: "Vegan",
+      avatar: "Rectangle 8 (1).png",
+      name: "Chef Burgers London",
+    },
+  ];
+  const combos = [
+    {
+      key: 1,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 13.png",
+    },
+    {
+      key: 2,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 19.png",
+    },
+    {
+      key: 3,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 21.png",
+    },
+    {
+      key: 4,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 17.png",
+    },
+    {
+      key: 5,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 13.png",
+    },
+    {
+      key: 6,
+      name: "Burger & Fast Food",
+      address: "21 Restaurants",
+      avatar: "Rectangle 15.png",
     },
   ];
   return (
@@ -42,28 +100,28 @@ const Home: React.FC = () => {
         <div className="bg-orange-500 w-2/5 absolute right-0 bottom-0 rounded-s-full h-[33rem]"></div>
 
         <div className="absolute translate-x-12 bottom-0 left-1/2">
-          <img src="\Untitled-2 1.png" alt="" />
+          <img src={backgroundPizza} alt="" />
         </div>
 
         <div className="w-1/2">
           <div className="bg-white rounded-xl p-4 absolute  w-1/5 right-48 top-12">
-            <img src="\logo.svg" alt="" className="w-16 mb-3" />
+            <img src={logo} alt="" className="w-16 mb-3" />
             <p className="text-sm font-bold">We’ve Received your order!</p>
             <p className="text-sm">Awaiting Restaurant acceptance </p>
           </div>
           <div className="bg-white rounded-xl p-4 absolute  w-1/5 right-12 top-56">
-            <img src="\logo.svg" alt="" className="w-16 mb-3" />
+            <img src={logo} alt="" className="w-16 mb-3" />
             <p className="text-sm">We’ve Received your order!</p>
             <p className="text-sm">Awaiting Restaurant acceptance </p>
           </div>
           <div className="bg-white rounded-xl p-4 absolute  w-1/5 right-32 top-96">
-            <img src="\logo.svg" alt="" className="w-16 mb-3" />
+            <img src={logo} alt="" className="w-16 mb-3" />
             <p className="text-sm">We’ve Received your order!</p>
             <p className="text-sm">Awaiting Restaurant acceptance </p>
           </div>
         </div>
         <div className="absolute -translate-x-1/2 bottom-0 left-1/2">
-          <img src="\Untitled-1 1.png" alt="" />
+          <img src={backgroundNoodle} alt="" />
         </div>
 
         <div className="top-1/2 absolute -translate-y-1/2">
@@ -80,7 +138,6 @@ const Home: React.FC = () => {
           <span>Enter a postcode to see what we deliver</span>
           <div className="mb-6">
             <div className="relative rounded-md shadow-sm mt-4 w-3/4">
-    
               <input
                 className="appearance-none right-0 ring-orange-300 border ring-0 outline-none  w-full py-2 px-3 rounded-full  text-gray-700 leading-tight focus:outline-none"
                 placeholder="e.g. EC4R 3TE"
@@ -118,63 +175,27 @@ const Home: React.FC = () => {
       </div>
 
       <div className="flex space-x-4 mt-12 mb-12">
-        <div className="relative   w-full md:flex-1 h-full">
-          <img
-            src="/Rectangle 8 (1).png"
-            className="object-cover w-full rounded-xl"
-            alt=""
-          />
-          <div className="bg-gradient-to-tr from-black/90  absolute  to-gray-50/0 h-full w-full  top-0 rounded-xl">
-            <div className="absolute bottom-0 py-3 mb-6 w-full px-6 ">
-              <p className="text-orange-500 mb-3 font-medium">Restaurant</p>
-              <p className="font-bold text-lg text-white">
-                Chef Burgers London
-              </p>
+        {foodMenus.map((foodMenu) => (
+          <div className="relative   w-full md:flex-1 h-full">
+            <img
+              src={import.meta.env.BASE_URL + foodMenu.avatar}
+              className="object-cover w-full rounded-xl"
+              alt=""
+            />
+            <div className="bg-gradient-to-tr from-black/90  absolute  to-gray-50/0 h-full w-full  top-0 rounded-xl">
+              <div className="absolute bottom-0 py-3 mb-6 w-full px-6 ">
+                <p className="text-orange-500 mb-3 font-medium">Restaurant</p>
+                <p className="font-bold text-lg text-white">
+                  Chef Burgers London
+                </p>
+              </div>
             </div>
-          </div>
 
-          <span className="bg-black p-5 rounded-b-2xl text-white top-0 right-3 absolute">
-            -40%
-          </span>
-        </div>
-        <div className="relative   w-full md:flex-1 h-full">
-          <img
-            src="/Rectangle 8 (1).png"
-            className="object-cover w-full rounded-xl"
-            alt=""
-          />
-          <div className="bg-gradient-to-tr from-black/90  absolute  to-gray-50/0 h-full w-full  top-0 rounded-xl">
-            <div className="absolute bottom-0 py-3 mb-6 w-full px-6 ">
-              <p className="text-orange-500 mb-3 font-medium">Restaurant</p>
-              <p className="font-bold text-lg text-white">
-                Chef Burgers London
-              </p>
-            </div>
+            <span className="bg-black p-5 rounded-b-2xl text-white top-0 right-3 absolute">
+              -40%
+            </span>
           </div>
-
-          <span className="bg-black p-5 rounded-b-2xl text-white top-0 right-3 absolute">
-            -40%
-          </span>
-        </div>
-        <div className="relative   w-full md:flex-1 h-full">
-          <img
-            src="/Rectangle 8 (1).png"
-            className="object-cover w-full rounded-xl"
-            alt=""
-          />
-          <div className="bg-gradient-to-tr from-black/90  absolute  to-gray-50/0 h-full w-full  top-0 rounded-xl">
-            <div className="absolute bottom-0 py-3 mb-6 w-full px-6 ">
-              <p className="text-orange-500 mb-3 font-medium">Restaurant</p>
-              <p className="font-bold text-lg text-white">
-                Chef Burgers London
-              </p>
-            </div>
-          </div>
-
-          <span className="bg-black p-5 rounded-b-2xl text-white top-0 right-3 absolute">
-            -40%
-          </span>
-        </div>
+        ))}
       </div>
 
       <div className="flex justify-between mt-12 mb-12">
@@ -183,74 +204,18 @@ const Home: React.FC = () => {
         </span>
       </div>
       <div className="flex space-x-4 mt-12 mb-12">
-        <div className="relative   w-full md:flex-1 h-full border bg-zinc-100 rounded-xl">
-          <img
-            src="\Rectangle 13.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
-        <div className="relative   w-full md:flex-1 h-full border bg-zinc-100 rounded-xl">
-          <img
-            src="\Rectangle 23.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
-
-        <div className="relative   w-full md:flex-1 h-full border bg-gray-100 rounded-xl">
-          <img
-            src="\Rectangle 15.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
-        <div className="relative   w-full md:flex-1 h-full border bg-gray-100 rounded-xl">
-          <img
-            src="\Rectangle 17.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
-
-        <div className="relative   w-full md:flex-1 h-full border bg-gray-100 rounded-xl">
-          <img
-            src="\Rectangle 19.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
-        <div className="relative   w-full md:flex-1 h-full border bg-gray-100 rounded-xl">
-          <img
-            src="\Rectangle 21.png"
-            className="object-cover w-full "
-            alt=""
-          />
-          <p className="font-bold mt-3 px-3"> Burgers & Fast food</p>
-          <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
-            21 Restaurants
-          </p>
-        </div>
+        {combos.map((combo) => (
+          <div
+            className="relative   w-full md:flex-1 h-full border bg-zinc-100 rounded-xl"
+            key={combo.key}
+          >
+            <img src={import.meta.env.BASE_URL + combo.avatar} className="object-cover w-full " alt="" />
+            <p className="font-bold mt-3 px-3"> {combo.name} </p>
+            <p className="text-sm text-orange-500 px-3 mt-1 mb-3">
+              {combo.address}
+            </p>
+          </div>
+        ))}
       </div>
       <div className="flex justify-between mt-12 mb-12">
         <span className="font-bold text-xl">Popular Restaurants</span>
@@ -258,8 +223,15 @@ const Home: React.FC = () => {
 
       <div className="flex space-x-4 mt-12 mb-12">
         {restaurants.map((restaurant) => (
-          <div key={restaurant.id} className="relative   w-full md:flex-1 h-full border bg-orange-500 rounded-xl">
-            <img src={restaurant.avatar} className="object-contain w-full " alt="" />
+          <div
+            key={restaurant.id}
+            className="relative   w-full md:flex-1 h-full border bg-orange-500 rounded-xl"
+          >
+            <img
+              src={import.meta.env.BASE_URL + restaurant.avatar}
+              className="object-contain w-full "
+              alt=""
+            />
             <p className="text-lg font-bold text-center text-white py-5">
               {restaurant.name}
             </p>

@@ -24,6 +24,7 @@ function Header() {
               <li>
                 <NavLink
                   to="/"
+                  
                   className={({ isActive }) =>
                     `  ${navLinkStyle} ${isActive ? activeClass : "text-black"} `
                   }

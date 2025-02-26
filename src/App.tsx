@@ -11,12 +11,15 @@ import Restaurant from "./pages/Restaurant";
 
 function App() {
 
-  console.log(new Date().toLocaleTimeString());
+
+  //Keep this line to check if the environment is development or production
+  
+  
   return (
-    <Router>
+    <Router basename={import.meta.env.DEV ? '/' : '/my-first-store/'}>
       <Routes>
         {/* Main Layout */}
-        <Route path="/my-first-store" element={<MainLayout />}>
+        <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="special-offers" element={<Order />} />
           <Route path="dashboard" element={<Dashboard />} />
