@@ -52,5 +52,8 @@ my-react-app/
 │   └── styles/
 
 ```
+## 🎨 Design Prototype
 
-[🔗Figma](https://www.figma.com/design/cuDRzFIrO9VEAZCG4kKAYF/Food-Delivery-Website-%26-App-Design-UI-Kit-(Community)-(Copy)?node-id=4-2&t=p0q5xmjnjnZNl1aM-0)
+Check out the UI/UX design on Figma:  
+
+[🔗 Figma Design](https://www.figma.com/design/cuDRzFIrO9VEAZCG4kKAYF/Food-Delivery-Website-%26-App-Design-UI-Kit-(Community)-(Copy)?node-id=4-2&t=p0q5xmjnjnZNl1aM-0)
