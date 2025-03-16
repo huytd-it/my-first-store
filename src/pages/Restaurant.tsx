@@ -11,21 +11,21 @@ const Restaurant: React.FC = () => {
       name: "First Order Discount",
       branch_name: "McDonald’s East London",
       discount: "-20%",
-      avatar: "/public/discount-1.png",
+      avatar: "discount-1.png",
     },
     {
       id: 2,
       name: "Vegan Discount",
       branch_name: "McDonald’s East London",
       discount: "-20%",
-      avatar: "/public/discount-2.png",
+      avatar: "discount-2.png",
     },
     {
       id: 3,
       name: "Free ice Cream Offer",
       branch_name: "McDonald’s East London",
       discount: "-50%",
-      avatar: "/public/discount-3.png",
+      avatar: "discount-3.png",
     },
   ];
 
@@ -35,7 +35,7 @@ const Restaurant: React.FC = () => {
       name: "Royal Cheese Burger with extra Fries",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/combo-1.png",
+      avatar: "combo-1.png",
     },
     {
       id: 2,
@@ -43,7 +43,7 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/combo-2.png",
+      avatar: "combo-2.png",
     },
     {
       id: 3,
@@ -51,28 +51,28 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/combo-3.png",
+      avatar: "combo-3.png",
     },
     {
       id: 4,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/combo-3.png",
+      avatar: "combo-3.png",
     },
     {
       id: 5,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/combo-1.png",
+      avatar: "combo-1.png",
     },
     {
       id: 6,
       name: "The classics for 2",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/combo-2.png",
+      avatar: "combo-2.png",
     },
   ];
   const fries = [
@@ -81,7 +81,7 @@ const Restaurant: React.FC = () => {
       name: "Royal Cheese Burger with extra Fries",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/fries-1.png",
+      avatar: "fries-1.png",
     },
     {
       id: 2,
@@ -89,7 +89,7 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/fries-2.png",
+      avatar: "fries-2.png",
     },
     {
       id: 3,
@@ -97,28 +97,28 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/fries-3.png",
+      avatar: "fries-3.png",
     },
     {
       id: 4,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/fries-2.png",
+      avatar: "fries-2.png",
     },
     {
       id: 5,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/fries-3.png",
+      avatar: "fries-3.png",
     },
     {
       id: 6,
       name: "The classics for 2",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/fries-4.png",
+      avatar: "fries-4.png",
     },
   ];
   const drinks = [
@@ -127,7 +127,7 @@ const Restaurant: React.FC = () => {
       name: "Royal Cheese Burger with extra Fries",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/drink (1).png",
+      avatar: "drink (1).png",
     },
     {
       id: 2,
@@ -135,7 +135,7 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/drink (2).png",
+      avatar: "drink (2).png",
     },
     {
       id: 3,
@@ -143,28 +143,28 @@ const Restaurant: React.FC = () => {
       description:
         "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium sized French Fries , 3 cold drinks",
       price: 2300000,
-      avatar: "/public/drink (3).png",
+      avatar: "drink (3).png",
     },
     {
       id: 4,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/drink (4).png",
+      avatar: "drink (4).png",
     },
     {
       id: 5,
       name: "The classics for 3",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/drink (5).png",
+      avatar: "drink (5).png",
     },
     {
       id: 6,
       name: "The classics for 2",
       description: "1 McChicken™, 1 Big Mac™,  1 Royal Cheeseburger, 3 medium",
       price: 2300000,
-      avatar: "/public/drink (6).png",
+      avatar: "drink (6).png",
     },
   ];
 
@@ -172,7 +172,7 @@ const Restaurant: React.FC = () => {
     <div className="">
       <div
         className="bg-cover  bg-center flex rounded-xl relative container mx-auto"
-        style={{ backgroundImage: "url('/public/Rectangle 44.png')" }}
+        style={{ backgroundImage: "url('Rectangle 44.png')" }}
       >
         <div className="w-full bg-opacity-70 items-center bg-zinc-200 rounded-xl flex h-[30rem]">
           <div className="flex-1 p-12 ">
@@ -181,11 +181,11 @@ const Restaurant: React.FC = () => {
 
             <div className="flex space-x-6 ">
               <button className="bg-slate-800 flex text-white px-6 py-2 rounded-full justify-center items-center space-x-2">
-                <img src="/public/Motocross.png" alt="" />
+                <img src="Motocross.png" alt="" />
                 <span>Minimum Order: 12 GBP</span>
               </button>
               <button className="bg-slate-800 flex text-white px-6 py-2 rounded-full justify-center items-center space-x-2">
-                <img src="/public/Order Completed.png" alt="" />
+                <img src="Order Completed.png" alt="" />
 
                 <span>Delivery in 20-25 Minutes</span>
               </button>
@@ -193,16 +193,16 @@ const Restaurant: React.FC = () => {
           </div>
           <div className="relative flex py-12 px-12">
             <img
-              src="/public/Rectangle 64.png"
+              src="Rectangle 64.png"
               alt=""
               className="w-28 top-[65%] -left-3  absolute "
             />
-            <img src="/public/Rectangle 44.png" alt="" className="w-[37rem]" />
+            <img src="Rectangle 44.png" alt="" className="w-[37rem]" />
           </div>
         </div>
 
         <button className="bg-orange-400 flex text-white px-6 py-2 rounded-r-lg justify-center items-center space-x-2 absolute -bottom-3">
-          <img src="/public/Clock.svg" alt="" />
+          <img src="Clock.svg" alt="" />
 
           <span>Open until 3:00 AM</span>
         </button>
@@ -275,7 +275,7 @@ const Restaurant: React.FC = () => {
                 key={discount.id}
               >
                 <img
-                  src={discount.avatar}
+                  src={import.meta.env.BASE_URL + discount.avatar}
                   className="object-cover w-full rounded-xl"
                   alt=""
                 />
@@ -312,7 +312,7 @@ const Restaurant: React.FC = () => {
                 <p className="text-sm text-zinc-400 mb-6">{item.description}</p>
                 <p className="font-bold"> {item.price} VNĐ</p>
               </div>
-              <img src={item.avatar} alt="" className="rounded-2xl w-2/5 " />
+              <img src={import.meta.env.BASE_URL + item.avatar} alt="" className="rounded-2xl w-2/5 " />
 
               <button className="bg-white bg-opacity-80 p-6 text-black absolute bottom-0 right-0 rounded-tl-[2rem] rounded-b-[2rem] hover:text-orange-500">
                 <PlusCircleIcon className="size-12" />
@@ -362,7 +362,7 @@ const Restaurant: React.FC = () => {
                 <p className="text-sm text-zinc-400 mb-6">{item.description}</p>
                 <p className="font-bold"> {item.price} VNĐ</p>
               </div>
-              <img src={item.avatar} alt="" className="rounded-2xl w-2/5" />
+              <img src={import.meta.env.BASE_URL + item.avatar} alt="" className="rounded-2xl w-2/5" />
 
               <button className="bg-white bg-opacity-80 p-6 text-black absolute bottom-0 right-0 rounded-tl-[2rem] rounded-b-[2rem] hover:text-orange-500">
                 <PlusCircleIcon className="size-12" />
@@ -375,7 +375,7 @@ const Restaurant: React.FC = () => {
         <div className="flex flex-col md:flex-row bg-zinc-300 space-y-6 md:space-y-0 md:space-x-6 shadow-md rounded-xl">
           {/* Delivery Information */}
           <SectionCard
-            icon={<img className="size-9" src="/public/Tracking.svg" />}
+            icon={<img className="size-9" src="Tracking.svg" />}
             title="Delivery information"
             content={
               <div>
@@ -411,7 +411,7 @@ const Restaurant: React.FC = () => {
 
           {/* Contact Information */}
           <SectionCard
-            icon={<img className="size-9" src="/public/ID Verified.svg" />}
+            icon={<img className="size-9" src="ID Verified.svg" />}
             title="Contact information"
             content={
               <div>
@@ -444,7 +444,7 @@ const Restaurant: React.FC = () => {
           {/* Operational Times */}
           <SectionCard
             customClasses="bg-black text-white rounded-r-xl "
-            icon={<img className="size-9" src="/public/Clock.png" />}
+            icon={<img className="size-9" src="Clock.png" />}
             title="Operational Times"
             content={
               <ul className="space-y-2 text-white">

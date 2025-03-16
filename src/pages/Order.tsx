@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import MenuList from "../components/common/MenuList";
+import backgroundMenu from "/Rectangle 44.png";
+import pizzaGirl from "/pizza-girl.png";
+import Rectangle_64 from "/Rectangle 64.png";
+import pizza from "/pizza.png";
 
 
 const Order: React.FC = () => {
@@ -22,7 +26,7 @@ const Order: React.FC = () => {
     <div className="container mx-auto">
       <div
         className="bg-cover  bg-center flex rounded-xl relative container mx-auto"
-        style={{ backgroundImage: "url('/public/Rectangle 44.png')" }}
+        style={{ backgroundImage: "url('" + backgroundMenu +"')" }}
       >
         <div className="w-full bg-opacity-70 items-center bg-zinc-200 rounded-xl flex h-[30rem]">
           <div className="flex-1 p-12 ">
@@ -45,11 +49,11 @@ const Order: React.FC = () => {
           </div>
           <div className="relative flex py-12 px-12">
             <img
-              src="/public/Rectangle 64.png"
+              src={Rectangle_64}
               alt=""
               className="w-28 top-[65%] -left-3  absolute "
             />
-            <img src="/public/pizza-girl.png" alt="" className=" w-[37rem]" />
+            <img src={pizzaGirl} alt="" className=" w-[37rem]" />
           </div>
         </div>
 
@@ -117,7 +121,7 @@ const Order: React.FC = () => {
                 </div>
                 <div className="w-3/5 flex justify-end">
                   <img
-                    src="/public/pizza.png"
+                    src={pizza}
                     alt=""
                     className="w-56 rounded-full"
                   />
@@ -171,7 +175,7 @@ const Order: React.FC = () => {
                 </div>
                 <div className="w-3/5 flex justify-end">
                   <img
-                    src="/public/pizza.png"
+                    src={pizza}
                     alt=""
                     className="w-56 rounded-full"
                   />
@@ -225,7 +229,7 @@ const Order: React.FC = () => {
                 </div>
                 <div className="w-3/5 flex justify-end">
                   <img
-                    src="/public/pizza.png"
+                    src={pizza}
                     alt=""
                     className="w-56 rounded-full"
                   />
@@ -279,7 +283,7 @@ const Order: React.FC = () => {
                 </div>
                 <div className="w-3/5 flex justify-end">
                   <img
-                    src="/public/pizza.png"
+                    src={pizza}
                     alt=""
                     className="w-56 rounded-full"
                   />

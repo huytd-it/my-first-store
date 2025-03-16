@@ -1,5 +1,5 @@
 import React from "react";
-
+import restaurantMenu from "/Restaurant Menu.png";
 interface MenuListProps {
   items: string[];
   selectedIndex?: number;
@@ -14,7 +14,7 @@ const MenuList: React.FC<MenuListProps> = ({
   return (
     <div className="w-full max-w-xs bg-zinc-100 border border-gray-300 rounded-lg shadow-md">
       <p className="flex p-12 items-center justify-center">
-        <img src="/public/Restaurant Menu.png" alt="" className="size-12" />
+        <img src={restaurantMenu} alt="" className="size-12" />
         <span className="pl-3 font-bold text-3xl">Menu</span>
       </p>
       <ul className="">
